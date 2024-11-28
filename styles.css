@@ -1,0 +1,116 @@
+/* General Reset */
+body, h1, h2, p, ul, li, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff5e6;
+  color: #4a4a4a;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ff7043; /* Naranja vivo */
+  color: white;
+  border-bottom: 4px solid #e64a19; /* Naranja oscuro */
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #e64a19; /* Naranja oscuro */
+  margin-top: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+section p, section ul {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #4a4a4a;
+  line-height: 1.8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Image Gallery */
+.image-gallery .image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image-gallery figure {
+  width: 70%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #e64a19;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery figure:hover {
+  transform: scale(1.05);
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-gallery figcaption {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #ff7043;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #e64a19; /* Naranja oscuro */
+  background-color: #fff5e6;
+  padding: 20px 0;
+  border-top: 4px solid #ff7043; /* Naranja vivo */
+}
+
+section ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff7043; /* Naranja vivo */
+  font-weight: bold;
+}
+
+/* Hover Effect */
+section h2:hover, section p:hover, section ul li:hover {
+  color: #ff7043; /* Naranja vivo */
+  transform: translateY(-3px);
+}
